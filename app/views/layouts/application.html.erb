@@ -4,7 +4,16 @@
   <title>Workspace</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
+  <div id="navbar">
+    <h1 id='header-msg'>Culinary Competition Scoring Sheets</h1>
+    <ul id='navbar-items'> <!-- Need to make sure that this is inline with the header -->
+      <li class='btn navbar-btn btn-primary'>Home</li>
+      <li class='btn navbar-btn btn-primary'>Log Out</li>
+    </ul>
+  </div>
 </head>
 <body>
 
