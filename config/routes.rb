@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  
+  resources :contacts
   resources :users
   root "pages#welcome"
   # The priority is based upon order of creation: first created -> highest priority.
