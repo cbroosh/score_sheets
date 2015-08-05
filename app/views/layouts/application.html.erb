@@ -10,12 +10,15 @@
   <div id="navbar">
     <h1 id='header-msg'>Culinary Competition Scoring Sheets</h1>
     <ul id='navbar-items'> <!-- Need to make sure that this is inline with the header -->
-      <li class='btn navbar-btn btn-primary'>Home</li>
+      <%= link_to "Home", root_path, class: 'btn btn-navbar btn-primary' %>
       <li class='btn navbar-btn btn-primary'>Log Out</li>
     </ul>
   </div>
 </head>
 <body>
+<% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
 
 <%= yield %>
 
